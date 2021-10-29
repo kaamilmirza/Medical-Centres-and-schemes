@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:medicine_app/constants.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-
 import 'package:medicine_app/models/firebase_model.dart';
 import 'package:medicine_app/services/application_change.dart';
 import 'package:provider/provider.dart';
@@ -12,6 +11,8 @@ class Home extends StatefulWidget {
   @override
   _HomeState createState() => _HomeState();
 }
+double longitude;
+double latitude;
 
 class _HomeState extends State<Home> {
   @override
@@ -44,7 +45,6 @@ class _HomeState extends State<Home> {
                       child: ListView(
                         padding: EdgeInsets.all(30),
                         children: [
-
                           Text(
                             "You are here",
                             style: kBoldTextStyle,
@@ -71,17 +71,19 @@ class _HomeState extends State<Home> {
                                   zoom: 14),
                             ),
                           ),
+                          SizedBox(
+                            height: 20.0,
+                          ),
                           ElevatedButton(
                               onPressed: () {
+                                longitude = applicationBloc.longitude;
+                                latitude =  applicationBloc.latitude;
                                 Navigator.push(
                                   context,
-                                  MaterialPageRoute(builder: (context) => HomePage()),
+                                  MaterialPageRoute(builder: (context) => HomePage(latitude: latitude,longitude: longitude,)),
                                 );
-                                longitude = applicationBloc.longitude;
-                                print(longitude);
                               },
-                              child: Text("Test"))
-
+                              child: Text("Test")),
                         ],
                       ),
                     )
