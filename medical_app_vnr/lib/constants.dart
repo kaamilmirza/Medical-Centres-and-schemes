@@ -16,7 +16,11 @@ const kBoldTextStyle = TextStyle(
       fontSize: 28.0,
       fontWeight: FontWeight.bold,
     );
-
+const kContainerTextStyle = TextStyle(
+    color: Colors.black,
+     fontSize: 20,
+    fontWeight: FontWeight.normal,
+);
 const kTextStyle = TextStyle(
     fontSize: 18.0,
     color: kTextColor,
