@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+
 
 class Schemes extends StatelessWidget {
   @override
@@ -13,28 +15,28 @@ class Schemes extends StatelessWidget {
                 SizedBox(
                   height: 35.0,
                 ),
-              Row(
-                children: [
-                  SizedBox(
-                    width: 15.0,
-                  ),
-                  Icon(
-                    Icons.account_balance,
-                    size: 35.0,
-                  ),
-                  Container(
-                    padding: EdgeInsets.only(left: 10.0),
+                Row(
+                  children: [
+                    SizedBox(
+                      width: 15.0,
+                    ),
+                    Icon(
+                      Icons.account_balance,
+                      size: 35.0,
+                    ),
+                    Container(
+                      padding: EdgeInsets.only(left: 10.0),
                       child:
-                    Text(
-                      'Central Government :',
-                      style: TextStyle(
-                        fontSize: 30,
-                        fontWeight: FontWeight.bold,
+                      Text(
+                        'Central Government :',
+                        style: TextStyle(
+                          fontSize: 30,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
-                  ),
-                ],
-              ),
+                  ],
+                ),
                 SizedBox(
                   height: 25.0,
                 ),
@@ -50,6 +52,19 @@ class Schemes extends StatelessWidget {
 
                           ListTile(title: Text('Accident Insurance Cover of Rs.1 lakh is available with RuPay card issued to the PMJDY account holders.')
                           ),
+
+                          ListTile(title: Text ('Click Here'),
+
+                            onTap: () async {
+                              const url = 'https://pmjdy.gov.in/';
+
+                              if (await canLaunch(url)) {
+                                await launch(url, forceWebView: true);
+                              } else {
+                                throw 'Could not launch $url';
+                              }
+                            },)
+
                         ],
 
                       ),
@@ -66,6 +81,19 @@ class Schemes extends StatelessWidget {
                             ),
                           ),
                           ),
+
+                          ListTile(title: Text ('Click Here'),
+
+                            onTap: () async {
+                              const url = 'https://www.jansuraksha.gov.in/Forms-PMJJBY.aspx';
+
+                              if (await canLaunch(url)) {
+                                await launch(url, forceWebView: true);
+                              } else {
+                                throw 'Could not launch $url';
+                              }
+                            },)
+
                         ],
                       ),
                       SizedBox(
@@ -81,6 +109,18 @@ class Schemes extends StatelessWidget {
                             ),
                           ),
                           ),
+                          ListTile(title: Text ('Click Here'),
+
+                            onTap: () async {
+                              const url = 'https://nationalinsurance.nic.co.in/en/about-us/pradhan-mantri-suraksha-bima-yojana';
+
+                              if (await canLaunch(url)) {
+                                await launch(url, forceWebView: true);
+                              } else {
+                                throw 'Could not launch $url';
+                              }
+                            },)
+
                         ],
                       ),
                       SizedBox(
@@ -97,6 +137,18 @@ class Schemes extends StatelessWidget {
                             ),
                           ),
                           ),
+                          ListTile(title: Text ('Click Here'),
+
+                            onTap: () async {
+                              const url = 'https://pmjay.gov.in/form/job-seeker-profile';
+
+                              if (await canLaunch(url)) {
+                                await launch(url, forceWebView: true);
+                              } else {
+                                throw 'Could not launch $url';
+                              }
+                            },)
+
                         ],
                       ),
                       SizedBox(
@@ -143,6 +195,18 @@ class Schemes extends StatelessWidget {
                         children: <Widget>[
                           ListTile(title: Text('The scheme provides financial protection to families living below poverty line upto Rs. 2 lakhs in a year for the treatment of serious ailments requiring hospitalization and surgery.')
                           ),
+                          ListTile(title: Text ('Click Here'),
+
+                            onTap: () async {
+                              const url = 'https://services.india.gov.in/service/detail/telangana-aarogyasri-health-care-trust-information-on-aarogyasri-scheme-1';
+
+                              if (await canLaunch(url)) {
+                                await launch(url, forceWebView: true);
+                              } else {
+                                throw 'Could not launch $url';
+                              }
+                            },)
+
                         ],
 
                       ),

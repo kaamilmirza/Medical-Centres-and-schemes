@@ -85,9 +85,6 @@ class _HomeState extends State<Home> {
                                 );
                               },
                               child: Text("Test")),
-                          SizedBox(
-                            height: 20.0,
-                          ),
                           ElevatedButton(
                               onPressed: () {
                                 Navigator.push(
@@ -95,7 +92,8 @@ class _HomeState extends State<Home> {
                                   MaterialPageRoute(builder: (context) => Schemes()),
                                 );
                               },
-                              child: Text("Medical Schemes")),
+                              child: Text("Schemes")),
+
                         ],
                       ),
                     )
