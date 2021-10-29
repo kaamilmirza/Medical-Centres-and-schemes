@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1046936114125",
+    "firebase_url": "https://vnrhackathon-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "vnrhackathon",
+    "storage_bucket": "vnrhackathon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1046936114125:android:ad7fe4fe139af61eddea84",
+        "android_client_info": {
+          "package_name": "arunadithya.pythonanywhere.medicine_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1046936114125-39fpso3ajootao1l994gc07pg3lar92t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAY22eMtMTmdqmbX7metQupMvFzqy57cYc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1046936114125-39fpso3ajootao1l994gc07pg3lar92t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

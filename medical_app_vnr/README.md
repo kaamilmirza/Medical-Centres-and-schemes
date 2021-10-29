@@ -1,4 +1,4 @@
-# medical_app_vnr
+# medicine_app
 
 A new Flutter application.
 

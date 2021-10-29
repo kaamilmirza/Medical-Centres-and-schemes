@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:medicine_app/constants.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'dart:async';
 
+import 'package:medicine_app/models/firebase_model.dart';
 import 'package:medicine_app/services/application_change.dart';
 import 'package:provider/provider.dart';
 
@@ -44,55 +44,44 @@ class _HomeState extends State<Home> {
                       child: ListView(
                         padding: EdgeInsets.all(30),
                         children: [
-                          TextField(
-                            decoration: InputDecoration(
-                                hintText: "Search",
-                                suffixIcon: Icon(Icons.search)),
-                            onChanged: (value) =>
-                                applicationBloc.searchPlaces(value),
-                            scrollPadding: EdgeInsets.all(8),
+
+                          Text(
+                            "You are here",
+                            style: kBoldTextStyle,
                           ),
-                          Stack(
-                            children: [
-                              Container(
-                                height: 400,
-                                child: GoogleMap(
-                                  mapType: MapType.normal,
-                                  myLocationButtonEnabled: true,
-                                  initialCameraPosition: CameraPosition(
-                                      target: LatLng(
-                                          applicationBloc
-                                              .currentLocation.latitude,
-                                          applicationBloc
-                                              .currentLocation.longitude),
-                                      zoom: 14),
-                                ),
-                              ),
-                              Container(
-                                height: 200,
-                                width: double.infinity,
-                                decoration: BoxDecoration(
-                                    color: Colors.black12.withOpacity(.6),
-                                    backgroundBlendMode: BlendMode.darken),
-                              ),
-                              Container(
-                                height: 200,
-                                child: ListView.builder(
-                                  itemBuilder: (context, index) {
-                                    return ListTile(
-                                      title: Text(
-                                        applicationBloc
-                                            .searchResults[index].description,
-                                        style: TextStyle(color: Colors.white),
-                                      ),
-                                    );
-                                  },
-                                  itemCount:
-                                      applicationBloc.searchResults?.length,
-                                ),
-                              )
-                            ],
-                          )
+                          SizedBox(
+                            height: 15,
+                          ),
+                          Container(
+                            decoration: BoxDecoration(boxShadow: [
+                              BoxShadow(
+                                  blurRadius: 10,
+                                  color: Colors.grey,
+                                  offset: Offset(1, 3))
+                            ]),
+                            height: 300,
+                            child: GoogleMap(
+                              mapType: MapType.normal,
+                              myLocationButtonEnabled: true,
+                              initialCameraPosition: CameraPosition(
+                                  target: LatLng(
+                                      applicationBloc.currentLocation.latitude,
+                                      applicationBloc
+                                          .currentLocation.longitude),
+                                  zoom: 14),
+                            ),
+                          ),
+                          ElevatedButton(
+                              onPressed: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => HomePage()),
+                                );
+                                longitude = applicationBloc.longitude;
+                                print(longitude);
+                              },
+                              child: Text("Test"))
+
                         ],
                       ),
                     )
