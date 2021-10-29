@@ -1,4 +1,6 @@
+
 import 'package:flutter/material.dart';
+import 'package:sizer/sizer.dart';
 import 'package:medicine_app/services/application_change.dart';
 import 'package:provider/provider.dart';
 import 'my_shared_preferences.dart';
@@ -20,6 +22,9 @@ class MyApp extends StatefulWidget {
     // TODO: implement createState
     return MyAppState();
   }
+}
+
+class ResponsiveSizer {
 }
 
 class MyAppState extends State<MyApp> {
