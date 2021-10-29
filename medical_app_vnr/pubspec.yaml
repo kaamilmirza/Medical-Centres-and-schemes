@@ -21,6 +21,7 @@ environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
+  geocoding: ^2.0.1
   firebase_core: ^1.8.0
   firebase_database: ^8.0.1
   provider: ^6.0.1

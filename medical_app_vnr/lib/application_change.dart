@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:geolocator/geolocator.dart';
-import 'geolocator_services.dart';
+import 'services/geolocator_services.dart';
+
 
 class ApplicationBloc with ChangeNotifier{
   final geoLocatorService = GeolocatorService();
