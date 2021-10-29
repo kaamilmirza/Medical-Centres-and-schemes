@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:medicine_app/home.dart';
 import 'constants.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:sizer/sizer.dart';
 
 class Intro extends StatefulWidget {
   @override
