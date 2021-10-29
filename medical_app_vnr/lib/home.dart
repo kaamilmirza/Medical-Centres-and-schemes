@@ -92,7 +92,7 @@ class _HomeState extends State<Home> {
                               onPressed: () {
                                 Navigator.push(
                                   context,
-                                  MaterialPageRoute(builder: (context) => schemes()),
+                                  MaterialPageRoute(builder: (context) => Schemes()),
                                 );
                               },
                               child: Text("Medical Schemes")),
