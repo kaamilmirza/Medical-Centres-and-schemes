@@ -6,9 +6,13 @@ import 'package:provider/provider.dart';
 import 'my_shared_preferences.dart';
 import 'intro.dart';
 import 'home.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 
-void main() {
+void main () async{
+  WidgetsFlutterBinding.ensureInitialized();
+
+  await Firebase.initializeApp();
   runApp(MyApp());
 }
 
