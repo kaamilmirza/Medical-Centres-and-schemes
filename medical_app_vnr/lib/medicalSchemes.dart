@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+
 class Schemes extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -51,6 +52,7 @@ class Schemes extends StatelessWidget {
 
                           ListTile(title: Text('Accident Insurance Cover of Rs.1 lakh is available with RuPay card issued to the PMJDY account holders.')
                           ),
+
                           ListTile(title: Text ('Click Here'),
 
                             onTap: () async {
@@ -62,6 +64,7 @@ class Schemes extends StatelessWidget {
                                 throw 'Could not launch $url';
                               }
                             },)
+
                         ],
 
                       ),
@@ -78,6 +81,7 @@ class Schemes extends StatelessWidget {
                             ),
                           ),
                           ),
+
                           ListTile(title: Text ('Click Here'),
 
                             onTap: () async {
@@ -89,6 +93,7 @@ class Schemes extends StatelessWidget {
                                 throw 'Could not launch $url';
                               }
                             },)
+
                         ],
                       ),
                       SizedBox(
@@ -115,6 +120,7 @@ class Schemes extends StatelessWidget {
                                 throw 'Could not launch $url';
                               }
                             },)
+
                         ],
                       ),
                       SizedBox(
@@ -142,6 +148,7 @@ class Schemes extends StatelessWidget {
                                 throw 'Could not launch $url';
                               }
                             },)
+
                         ],
                       ),
                       SizedBox(
@@ -199,6 +206,7 @@ class Schemes extends StatelessWidget {
                                 throw 'Could not launch $url';
                               }
                             },)
+
                         ],
 
                       ),

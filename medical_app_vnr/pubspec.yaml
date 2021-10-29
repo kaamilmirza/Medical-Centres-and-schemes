@@ -21,6 +21,8 @@ environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
+  url_launcher: ^6.0.12
+  cloud_firestore: ^2.5.4
   geocoding: ^2.0.1
   firebase_core: ^1.8.0
   firebase_database: ^8.0.1
@@ -31,6 +33,7 @@ dependencies:
   google_fonts: ^2.1.0
   shared_preferences: ^2.0.8
   url_launcher: ^6.0.3
+
   flutter:
     sdk: flutter
 
