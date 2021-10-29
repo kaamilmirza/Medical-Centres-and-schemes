@@ -30,6 +30,7 @@ dependencies:
   google_maps_flutter: ^2.0.11
   google_fonts: ^2.1.0
   shared_preferences: ^2.0.8
+  sizer: ^2.0.15
   flutter:
     sdk: flutter
 
