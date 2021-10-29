@@ -4,7 +4,6 @@ import 'constants.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 
-
 class Intro extends StatefulWidget {
   @override
   _IntroState createState() => _IntroState();
