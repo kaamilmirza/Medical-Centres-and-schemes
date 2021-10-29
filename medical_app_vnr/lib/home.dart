@@ -11,7 +11,8 @@ class Home extends StatefulWidget {
   @override
   _HomeState createState() => _HomeState();
 }
-var longitude;
+double longitude;
+double latitude;
 
 class _HomeState extends State<Home> {
   @override
@@ -70,16 +71,19 @@ class _HomeState extends State<Home> {
                                   zoom: 14),
                             ),
                           ),
+                          SizedBox(
+                            height: 20.0,
+                          ),
                           ElevatedButton(
                               onPressed: () {
+                                longitude = applicationBloc.longitude;
+                                latitude =  applicationBloc.latitude;
                                 Navigator.push(
                                   context,
-                                  MaterialPageRoute(builder: (context) => HomePage()),
+                                  MaterialPageRoute(builder: (context) => HomePage(latitude: latitude,longitude: longitude,)),
                                 );
-                                longitude = applicationBloc.longitude;
-                                print(longitude);
                               },
-                              child: Text("Test"))
+                              child: Text("Test")),
                         ],
                       ),
                     )
