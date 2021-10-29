@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:medicine_app/datashower.dart';
+
 import 'package:medicine_app/services/application_change.dart';
 import 'package:provider/provider.dart';
 import 'my_shared_preferences.dart';
 import 'intro.dart';
 import 'home.dart';
-import 'datashower.dart';
+
 
 void main() {
   runApp(MyApp());
