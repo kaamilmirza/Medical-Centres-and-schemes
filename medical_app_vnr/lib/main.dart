@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+
 import 'package:medicine_app/services/application_change.dart';
 import 'package:provider/provider.dart';
 import 'my_shared_preferences.dart';
 import 'intro.dart';
 import 'home.dart';
+
 
 void main() {
   runApp(MyApp());
@@ -35,7 +37,7 @@ class MyAppState extends State<MyApp> {
     return ChangeNotifierProvider(
       create: (context) =>ApplicationBloc() ,
       child: MaterialApp(
-          home: isFirstTimeOpen ? Home() : Intro()),
+          home: isFirstTimeOpen ? datashower() : datashower()),
     );
   }
 }
