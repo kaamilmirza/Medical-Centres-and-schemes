@@ -6,6 +6,7 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:medicine_app/models/firebase_model.dart';
 import 'package:medicine_app/services/application_change.dart';
 import 'package:provider/provider.dart';
+import 'medicalSchemes.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -84,6 +85,15 @@ class _HomeState extends State<Home> {
                                 );
                               },
                               child: Text("Test")),
+                          ElevatedButton(
+                              onPressed: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => Schemes()),
+                                );
+                              },
+                              child: Text("Schemes")),
+
                         ],
                       ),
                     )
