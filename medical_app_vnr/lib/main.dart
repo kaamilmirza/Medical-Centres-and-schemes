@@ -1,36 +1,43 @@
 import 'package:flutter/material.dart';
-import 'package:medical_app_vnr/intro.dart';
-import 'package:medical_app_vnr/home.dart';
+import 'package:medicine_app/datashower.dart';
+import 'package:medicine_app/services/application_change.dart';
+import 'package:provider/provider.dart';
+import 'my_shared_preferences.dart';
+import 'intro.dart';
+import 'home.dart';
+import 'datashower.dart';
 
 void main() {
   runApp(MyApp());
 }
 
-
 class MyApp extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
+    // TODO: implement createState
     return MyAppState();
   }
 }
 
 class MyAppState extends State<MyApp> {
+  // This widget is the root of your application.
+
   bool isFirstTimeOpen = false;
 
-  MyAppState(){
-  MySharedPreferences.instance
-  .getBooleanValue("firstTimeOpen")
-      .then((value))=>setState((){
-        isFirstTimeOpen = value;
-  }));
-}
+  MyAppState() {
+    MySharedPreferences.instance
+        .getBooleanValue("firstTimeOpen")
+        .then((value) => setState(() {
+      isFirstTimeOpen = value;
+    }));
+  }
 
-@override
-    Widget build(BuildContext context) {
-  return ChangeNotifierProvider(
-      create: (context) => AppllicationBloc(),
+  @override
+  Widget build(BuildContext context) {
+    return ChangeNotifierProvider(
+      create: (context) =>ApplicationBloc() ,
       child: MaterialApp(
-          home: isFirstTimeOpen ? Home() : Intro()),
+          home: isFirstTimeOpen ? datashower() : datashower()),
     );
   }
 }
