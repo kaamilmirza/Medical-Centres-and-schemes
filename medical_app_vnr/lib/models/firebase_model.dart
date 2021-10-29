@@ -73,6 +73,7 @@ class _HomePageState extends State<HomePage> {
                 child: Text("Click this"),
                 onPressed: () {
                   print(_state);
+                  printFirebase();
                 })),
       ),
     );

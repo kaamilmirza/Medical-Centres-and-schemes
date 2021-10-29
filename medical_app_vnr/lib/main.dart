@@ -37,7 +37,7 @@ class MyAppState extends State<MyApp> {
     return ChangeNotifierProvider(
       create: (context) =>ApplicationBloc() ,
       child: MaterialApp(
-          home: isFirstTimeOpen ? datashower() : datashower()),
+          home: isFirstTimeOpen ? Home() : Intro()),
     );
   }
 }
