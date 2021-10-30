@@ -45,6 +45,7 @@ class MyAppState extends State<MyApp> {
     return ChangeNotifierProvider(
       create: (context) =>ApplicationBloc() ,
       child: MaterialApp(
+        debugShowCheckedModeBanner:false,
           home: isFirstTimeOpen ? Home() : Intro()),
     );
   }

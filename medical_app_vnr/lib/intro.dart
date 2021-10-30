@@ -30,7 +30,8 @@ class _IntroState extends State<Intro> {
                 Padding(
                   padding: const EdgeInsets.all(24.0),
                   child: Text(
-                    "Find the nearest Health Centers \n       and government schemes",
+                    "Find the nearest Health Centers and government schemes",
+                    textAlign: TextAlign.center,
                     style: GoogleFonts.poppins(
                       color: kButtonColor,
                       fontWeight: FontWeight.bold,
