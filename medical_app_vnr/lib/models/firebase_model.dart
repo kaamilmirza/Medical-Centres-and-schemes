@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:geocoding/geocoding.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:medicine_app/constants.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class HomePage extends StatefulWidget {
@@ -63,6 +64,15 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: kButtonColor,
+        title: Text("Medical Centers",
+          style: GoogleFonts.openSans(
+            fontWeight: FontWeight.w600,
+            fontSize: 22.0
+          )
+        ),
+      ),
         body: SafeArea(
           child: Container(
             child: Center(
@@ -80,7 +90,7 @@ class _HomePageState extends State<HomePage> {
                   }
                   final data = snapshot.requireData;
                   return ListView.builder(
-                    padding: EdgeInsets.all(20.0),
+                    padding: EdgeInsets.fromLTRB(30, 20, 30, 20),
                     scrollDirection: Axis.vertical,
                     itemCount: data.size,
                     itemBuilder: (context, index) {
@@ -103,7 +113,7 @@ class _HomePageState extends State<HomePage> {
                             _launchURL(url);
                       },
                             child: Container(
-                              padding: EdgeInsets.all(8.0),
+                              padding: EdgeInsets.only(left: 15,right: 15,top: 8,bottom: 8),
                               decoration: BoxDecoration(
                                   color: Colors.white,
                                   borderRadius: BorderRadius.all(Radius.circular(
@@ -120,7 +130,7 @@ class _HomePageState extends State<HomePage> {
                                   Text("$FacilityName",
                                       style: GoogleFonts.poppins(
                                         color: Color(0xff848da0),
-                                        fontSize: 24.0,
+                                        fontSize: 20.0,
                                         fontWeight: FontWeight.w600,
                                       )),
                                   SizedBox(
@@ -130,9 +140,21 @@ class _HomePageState extends State<HomePage> {
                                     "$faciltyType",
                                     style: GoogleFonts.poppins(
                                       color: Color(0xffabb3c0),
-                                      fontSize: 19,
+                                      fontSize: 15,
                                       fontWeight: FontWeight.normal
                                     ),
+                                  ),
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.end,
+                                    children: [
+                                      Text("Tap to navigate",
+                                        style: GoogleFonts.poppins(
+                                          color: Color(0xffabb3c0),
+                                          fontSize: 8.0,
+                                          fontStyle: FontStyle.italic
+                                        ),
+                                      )
+                                    ],
                                   ),
                                   SizedBox(
                                     height: 15,
@@ -142,7 +164,7 @@ class _HomePageState extends State<HomePage> {
                             ),
                           ),
                           SizedBox(
-                            height: 10,
+                            height: 20,
                           )
                         ],
                       );
