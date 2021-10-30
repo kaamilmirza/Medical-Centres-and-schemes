@@ -20,12 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b31a3e6-4bef-4205-82b9-b92c35194ad4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/VJH_003.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medical_app_vnr/lib/home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/medical_app_vnr/lib/home.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/medical_app_vnr/lib/intro.dart" beforeDir="false" afterPath="$PROJECT_DIR$/medical_app_vnr/lib/intro.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medical_app_vnr/lib/models/firebase_model.dart" beforeDir="false" afterPath="$PROJECT_DIR$/medical_app_vnr/lib/models/firebase_model.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/medical_app_vnr/lib/medicalSchemes.dart" beforeDir="false" afterPath="$PROJECT_DIR$/medical_app_vnr/lib/medicalSchemes.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +30,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="20CWb5PmtsmulpAuQuEo7OcKVtF" />
@@ -79,6 +81,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1635549212267">
@@ -89,25 +92,29 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="276" y="130" key="#com.intellij.ide.util.TreeFileChooserDialog/0.0.1280.680@0.0.1280.680" timestamp="1635549205656" />
-    <state x="100" y="100" width="756" height="487" key="AVDManager" timestamp="1635549527869">
+    <state x="100" y="100" width="756" height="487" key="AVDManager" timestamp="1635569204677">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="100" y="100" width="756" height="487" key="AVDManager/0.0.1280.680@0.0.1280.680" timestamp="1635549527869" />
-    <state width="945" height="163" key="GridCell.Tab.0.bottom" timestamp="1635550751830">
+    <state x="100" y="100" width="756" height="487" key="AVDManager/0.0.1280.680@0.0.1280.680" timestamp="1635569204677" />
+    <state width="178" height="264" key="Git.Branch.Popup" timestamp="1635553024870">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="945" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1635550751830" />
-    <state width="945" height="163" key="GridCell.Tab.0.center" timestamp="1635550751830">
+    <state width="178" height="264" key="Git.Branch.Popup/0.0.1280.680@0.0.1280.680" timestamp="1635553024870" />
+    <state width="951" height="162" key="GridCell.Tab.0.bottom" timestamp="1635569212178">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="945" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1635550751830" />
-    <state width="945" height="163" key="GridCell.Tab.0.left" timestamp="1635550751829">
+    <state width="951" height="162" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1635569212178" />
+    <state width="951" height="162" key="GridCell.Tab.0.center" timestamp="1635569212177">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="945" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1635550751829" />
-    <state width="945" height="163" key="GridCell.Tab.0.right" timestamp="1635550751830">
+    <state width="951" height="162" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1635569212177" />
+    <state width="951" height="162" key="GridCell.Tab.0.left" timestamp="1635569212177">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="945" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1635550751830" />
+    <state width="951" height="162" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1635569212177" />
+    <state width="951" height="162" key="GridCell.Tab.0.right" timestamp="1635569212177">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="951" height="162" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1635569212177" />
   </component>
 </project>

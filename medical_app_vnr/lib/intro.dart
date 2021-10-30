@@ -58,12 +58,15 @@ class _IntroState extends State<Intro> {
                               color: Colors.grey,
                               offset: Offset(1, 3))
                         ]),
-                    child: Center(
-                        child: Text(
-                      "Get Started",
-                      style: GoogleFonts.poppins(
-                          textStyle: kButtonTextStyle),
-                    )),
+                    child: Container(
+                      child: Center(
+                          child: Text(
+                        "Get Started",
+                        textAlign: TextAlign.center,
+                        style: GoogleFonts.poppins(
+                            textStyle: kButtonTextStyle),
+                      )),
+                    ),
                     height: 80,
                     width: 220,
                   ),
