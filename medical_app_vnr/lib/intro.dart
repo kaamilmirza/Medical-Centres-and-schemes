@@ -27,10 +27,20 @@ class _IntroState extends State<Intro> {
                     child: Image.asset('images/1.jpg'),
                   ),
                 ),
-                SizedBox(
-                  height: 90,
+                Padding(
+                  padding: const EdgeInsets.all(24.0),
+                  child: Text(
+                    "Find the nearest Health Centers \n       and government schemes",
+                    style: GoogleFonts.poppins(
+                      color: kButtonColor,
+                      fontWeight: FontWeight.bold,
+                      fontSize:22.0,
+                    ),
+                  ),
                 ),
-                GestureDetector(
+                InkWell(
+                  hoverColor: Colors.white,
+                    splashColor: Colors.white,
                     onTap: () {
                       Navigator.push(
                         context,

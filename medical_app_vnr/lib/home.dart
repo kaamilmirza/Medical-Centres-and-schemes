@@ -12,6 +12,7 @@ class Home extends StatefulWidget {
   @override
   _HomeState createState() => _HomeState();
 }
+
 double longitude;
 double latitude;
 
@@ -51,7 +52,7 @@ class _HomeState extends State<Home> {
                             style: kBoldTextStyle,
                           ),
                           SizedBox(
-                            height: 15,
+                            height: 25,
                           ),
                           Container(
                             decoration: BoxDecoration(boxShadow: [
@@ -73,27 +74,81 @@ class _HomeState extends State<Home> {
                             ),
                           ),
                           SizedBox(
-                            height: 20.0,
+                            height: 45.0,
                           ),
-                          ElevatedButton(
-                              onPressed: () {
-                                longitude = applicationBloc.longitude;
-                                latitude =  applicationBloc.latitude;
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(builder: (context) => HomePage(latitude: latitude,longitude: longitude,)),
-                                );
-                              },
-                              child: Text("Test")),
-                          ElevatedButton(
-                              onPressed: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(builder: (context) => Schemes()),
-                                );
-                              },
-                              child: Text("Schemes")),
-
+                          InkWell(
+                            onTap: () {
+                              longitude = applicationBloc.longitude;
+                              latitude = applicationBloc.latitude;
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => HomePage(
+                                    latitude: latitude,
+                                    longitude: longitude,
+                                  ),
+                                ),
+                              );
+                            },
+                            child: Container(
+                              padding: EdgeInsets.all(25),
+                              decoration: BoxDecoration(
+                                  color: kButtonColor,
+                                  borderRadius: BorderRadius.all(
+                                      Radius.circular(
+                                          15.0)), // Set rounded corner radius
+                                  boxShadow: [
+                                    BoxShadow(
+                                        blurRadius: 10,
+                                        color: Colors.grey,
+                                        offset: Offset(1, 3))
+                                  ]),
+                              child: Center(
+                                child: Text(
+                                  "Find Medical Centers",
+                                  style: GoogleFonts.poppins(
+                                    fontSize:16.0,
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.normal),
+                                ),
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            height: 25,
+                          ),
+                          InkWell(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Schemes()),
+                              );
+                            },
+                            child: Container(
+                              padding: EdgeInsets.all(25),
+                              decoration: BoxDecoration(
+                                  color: kButtonColor,
+                                  borderRadius: BorderRadius.all(
+                                      Radius.circular(
+                                          15.0)), // Set rounded corner radius
+                                  boxShadow: [
+                                    BoxShadow(
+                                        blurRadius: 10,
+                                        color: Colors.grey,
+                                        offset: Offset(1, 3))
+                                  ]),
+                              child: Center(
+                                child: Text(
+                                  "Schemes",
+                                  style: GoogleFonts.poppins(
+                                    fontSize: 16.0,
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.normal),
+                                ),
+                              ),
+                            ),
+                          ),
                         ],
                       ),
                     )
