@@ -43,7 +43,7 @@ class Schemes extends StatelessWidget {
                 children: <Widget>[
                   ExpansionTile(
                     leading: Icon(Icons.landscape),
-                    title: Text("Pradhan Mantri Jan Dhan Yojana (PMJDY)"),
+                    title: Text("Pradhan Mantri Jan Dhan Yojana (PMJDY)",),
                     children: <Widget>[
                       ListTile(
                           title: Text(
